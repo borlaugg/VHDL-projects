@@ -1,0 +1,54 @@
+|DUT
+input_vector[0] => mux:add_instance.s0
+input_vector[1] => mux:add_instance.s1
+input_vector[2] => mux:add_instance.a[0]
+input_vector[3] => mux:add_instance.a[1]
+input_vector[4] => mux:add_instance.a[2]
+input_vector[5] => mux:add_instance.a[3]
+input_vector[6] => mux:add_instance.b[0]
+input_vector[7] => mux:add_instance.b[1]
+input_vector[8] => mux:add_instance.b[2]
+input_vector[9] => mux:add_instance.b[3]
+input_vector[10] => mux:add_instance.c[0]
+input_vector[11] => mux:add_instance.c[1]
+input_vector[12] => mux:add_instance.c[2]
+input_vector[13] => mux:add_instance.c[3]
+input_vector[14] => mux:add_instance.d[0]
+input_vector[15] => mux:add_instance.d[1]
+input_vector[16] => mux:add_instance.d[2]
+input_vector[17] => mux:add_instance.d[3]
+output_vector[0] << mux:add_instance.o[0]
+output_vector[1] << mux:add_instance.o[1]
+output_vector[2] << mux:add_instance.o[2]
+output_vector[3] << mux:add_instance.o[3]
+
+
+|DUT|mux:add_instance
+a[0] => o.DATAB
+a[1] => o.DATAB
+a[2] => o.DATAB
+a[3] => o.DATAB
+b[0] => o.DATAB
+b[1] => o.DATAB
+b[2] => o.DATAB
+b[3] => o.DATAB
+c[0] => o.DATAB
+c[1] => o.DATAB
+c[2] => o.DATAB
+c[3] => o.DATAB
+d[0] => o.DATAA
+d[1] => o.DATAA
+d[2] => o.DATAA
+d[3] => o.DATAA
+s0 => mx.IN0
+s0 => mx.IN0
+s0 => mx.IN0
+s1 => mx.IN1
+s1 => mx.IN1
+s1 => mx.IN1
+o[0] <= o.DB_MAX_OUTPUT_PORT_TYPE
+o[1] <= o.DB_MAX_OUTPUT_PORT_TYPE
+o[2] <= o.DB_MAX_OUTPUT_PORT_TYPE
+o[3] <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+

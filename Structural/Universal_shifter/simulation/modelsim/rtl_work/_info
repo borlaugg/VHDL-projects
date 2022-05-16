@@ -1,0 +1,555 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/simulation/modelsim
+Eand_2
+Z1 w1631091894
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/Gates.vhdl
+Z5 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/Gates.vhdl
+l0
+Z6 L33 1
+VBWDGm?fdQCzA9ROSW1QzD0
+!s100 9Bcbc=8<iOBEkJj;FFWX>3
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1631213369
+!i10b 1
+Z9 !s108 1631213369.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/Gates.vhdl|
+Z11 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/Gates.vhdl|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Aequations
+R2
+R3
+DEx4 work 5 and_2 0 22 BWDGm?fdQCzA9ROSW1QzD0
+!i122 0
+l38
+L37 4
+V22iNY604aSdM3X9;dkMgH1
+!s100 ZD1<f;RfbkmCLf]nKV:5J2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edut
+Z14 w1631095396
+R2
+R3
+!i122 1
+R0
+Z15 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/DUT.vhdl
+Z16 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/DUT.vhdl
+l0
+L7 1
+VPgBEF^75OTO[nho;d`T1n1
+!s100 BRmIKmPHM585R1C07g>Cg1
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/DUT.vhdl|
+Z18 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/DUT.vhdl|
+!i113 1
+R12
+R13
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 PgBEF^75OTO[nho;d`T1n1
+!i122 1
+l16
+L12 19
+VkANcTU<OA_4A4JbT6`Ejn1
+!s100 TG_=8VLKh4WfQ_>RgTbDL1
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Pgates
+R2
+R3
+!i122 0
+R1
+R0
+R4
+R5
+l0
+L3 1
+V=<8EIEEf604L69`_=MAF_0
+!s100 [Lb^?L244d25Vgm:zTgDd3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Einversion
+Z19 w1631095194
+Z20 DPx4 work 4 muxx 0 22 Qbch]O=dIQIB9Eh;Cg98A1
+Z21 DPx4 work 5 gates 0 22 =<8EIEEf604L69`_=MAF_0
+R2
+R3
+!i122 3
+R0
+Z22 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/shift.vhdl
+Z23 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/shift.vhdl
+l0
+R6
+V>d>k0i`@O<]62O;gYQ0^c0
+!s100 ^R<o[KC>Dd>c?1DceaA<z0
+R7
+31
+R8
+!i10b 1
+R9
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/shift.vhdl|
+Z25 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/shift.vhdl|
+!i113 1
+R12
+R13
+Ab
+R20
+R21
+R2
+R3
+DEx4 work 9 inversion 0 22 >d>k0i`@O<]62O;gYQ0^c0
+!i122 3
+l38
+L37 6
+VAdPz`ZB;f4CSna]dfafca1
+!s100 >XY3b]Bk`F@_lCZi7eAnQ2
+R7
+31
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Einverter
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L21 1
+VJ;EAMnc[<QGkT4NE`h[Gl0
+!s100 j9cZ`GED=V[^O8n<SWF>[2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Aequations
+R2
+R3
+DEx4 work 8 inverter 0 22 J;EAMnc[<QGkT4NE`h[Gl0
+!i122 0
+l26
+L25 4
+VBI^eb=CeF:<24^]@eI5Va1
+!s100 DH:PLGm5INjge:Z0o_4ob0
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Emux
+Z26 w1631094848
+R21
+R2
+R3
+!i122 2
+R0
+Z27 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/mux.vhdl
+Z28 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/mux.vhdl
+l0
+L16 1
+V5hQN72b<zN^_TTLR@Ki082
+!s100 12bjdTaiB[ABhVW0zDnoD2
+R7
+31
+R8
+!i10b 1
+R9
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/mux.vhdl|
+Z30 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/mux.vhdl|
+!i113 1
+R12
+R13
+Abeh
+R21
+R2
+R3
+DEx4 work 3 mux 0 22 5hQN72b<zN^_TTLR@Ki082
+!i122 2
+l23
+L21 12
+VdlmAHobP=_2ke18TzAWD;2
+!s100 ::Nf6F77PlMiWjSWIc]643
+R7
+31
+R8
+!i10b 1
+R9
+R29
+R30
+!i113 1
+R12
+R13
+Pmuxx
+R21
+R2
+R3
+!i122 2
+R26
+R0
+R27
+R28
+l0
+L5 1
+VQbch]O=dIQIB9Eh;Cg98A1
+!s100 gXKdUXe?NN>Szk3[gj6452
+R7
+31
+R8
+!i10b 1
+R9
+R29
+R30
+!i113 1
+R12
+R13
+Eor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L44 1
+V0kd3C0f6^5H4bXKgULnND1
+!s100 2N5<;Y5D:>_0zH^<8L><e3
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Aequations
+R2
+R3
+DEx4 work 4 or_2 0 22 0kd3C0f6^5H4bXKgULnND1
+!i122 0
+l49
+L48 4
+VYoQ5Vo0mC`1b=9aTAWd7P2
+!s100 daWk=^h3W@>?:O1Zn?i892
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Ers1
+R19
+R20
+R21
+R2
+R3
+!i122 3
+R0
+R22
+R23
+l0
+L101 1
+V1AGYle1g6TS9i4l2Z7BUI3
+!s100 c3=Fo]97MeLF;`]6UlGH62
+R7
+31
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Ab
+R20
+R21
+R2
+R3
+DEx4 work 3 rs1 0 22 1AGYle1g6TS9i4l2Z7BUI3
+!i122 3
+l106
+L105 14
+V4Fd4BbfQ8;o@Y<1SiLXQl3
+!s100 `kLQi?hbfA@:5J6MGSeT20
+R7
+31
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Ers2
+R19
+R20
+R21
+R2
+R3
+!i122 3
+R0
+R22
+R23
+l0
+L76 1
+VecFWM_ZKXF8d1kBUmkme:1
+!s100 iKS15LGDmBXLJBYS?XYIQ2
+R7
+31
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Ab
+R20
+R21
+R2
+R3
+DEx4 work 3 rs2 0 22 ecFWM_ZKXF8d1kBUmkme:1
+!i122 3
+l81
+L80 14
+VG3RH7PEcCN5=V5JU9Ka6Y3
+!s100 N?MJJ9Hm5`_=?iBPDCM1O1
+R7
+31
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Ers4
+R19
+R20
+R21
+R2
+R3
+!i122 3
+R0
+R22
+R23
+l0
+L51 1
+VXS[OFBOP27cJCgW4@]Fmk3
+!s100 PVnP>em?Qo0fm]Z321UYS2
+R7
+31
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Ab
+R20
+R21
+R2
+R3
+DEx4 work 3 rs4 0 22 XS[OFBOP27cJCgW4@]Fmk3
+!i122 3
+l56
+L55 14
+Veg`47G681im?O5OeA8LT82
+!s100 KTK4EBjIk<eY2O:T817dJ2
+R7
+31
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Pshift
+R20
+R21
+R2
+R3
+!i122 3
+R19
+R0
+R22
+R23
+l0
+L7 1
+VX227F9NGoWYZQFEehPd<S2
+!s100 ZVN`6VC4JzlDa9RZFioSe3
+R7
+31
+R8
+!i10b 1
+R9
+R24
+R25
+!i113 1
+R12
+R13
+Eshifter
+Z31 w1631095393
+Z32 DPx4 work 5 shift 0 22 X227F9NGoWYZQFEehPd<S2
+R20
+R21
+R2
+R3
+!i122 4
+R0
+Z33 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/Shifter.vhdl
+Z34 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/Shifter.vhdl
+l0
+L9 1
+VDEUHO:>k3BHi;G:55Mb]N3
+!s100 d0Z=9N_0b7Y3?^J19cc0L3
+R7
+31
+R8
+!i10b 1
+R9
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/Shifter.vhdl|
+Z36 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/Shifter.vhdl|
+!i113 1
+R12
+R13
+Ab
+R32
+R20
+R21
+R2
+R3
+DEx4 work 7 shifter 0 22 DEUHO:>k3BHi;G:55Mb]N3
+!i122 4
+l15
+L13 9
+VETJC>HOAUZXzU1QL[?S<:1
+!s100 VI1<]3oP2JG3i_kzJ6S1c0
+R7
+31
+R8
+!i10b 1
+R9
+R35
+R36
+!i113 1
+R12
+R13
+Etestbench
+Z37 w1631096810
+R3
+R2
+!i122 5
+R0
+Z38 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/Testbench.vhdl
+Z39 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R7
+31
+R8
+!i10b 1
+R9
+Z40 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/Testbench.vhdl|
+!s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/Testbench.vhdl|
+!i113 1
+R12
+R13
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 5
+l69
+L9 132
+V9n;cbPX0Eelkj5W7C4CAF3
+!s100 P<>ZCb<`<R7Lh<oHM?K2<0
+R7
+31
+R8
+!i10b 1
+R9
+R40
+Z41 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Universal_shifter/Testbench.vhdl|
+!i113 1
+R12
+R13

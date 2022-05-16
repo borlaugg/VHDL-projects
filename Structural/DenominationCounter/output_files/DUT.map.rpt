@@ -1,0 +1,388 @@
+Analysis & Synthesis report for DUT
+Mon Sep 20 20:43:50 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Parameter Settings for User Entity Instance: atm:add_instance|div:d100
+ 10. Parameter Settings for User Entity Instance: atm:add_instance|div:d50
+ 11. Port Connectivity Checks: "atm:add_instance|Mux2bit2x1:mx3"
+ 12. Port Connectivity Checks: "atm:add_instance|Mux2bit2x1:mx2"
+ 13. Port Connectivity Checks: "atm:add_instance|div:d50"
+ 14. Port Connectivity Checks: "atm:add_instance|div:d100"
+ 15. Port Connectivity Checks: "atm:add_instance|Mux2bit2x1:mx1"
+ 16. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Mon Sep 20 20:43:50 2021       ;
+; Quartus Prime Version       ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name               ; DUT                                         ;
+; Top-level Entity Name       ; DUT                                         ;
+; Family                      ; MAX V                                       ;
+; Total logic elements        ; 27                                          ;
+; Total pins                  ; 19                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; 5M1270ZT144C5      ;                    ;
+; Top-level entity name                                            ; DUT                ; DUT                ;
+; Family name                                                      ; MAX V              ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                       ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                ; Library ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+; Gates.vhd                        ; yes             ; User VHDL File  ; C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd       ;         ;
+; div.vhd                          ; yes             ; User VHDL File  ; C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/div.vhd         ;         ;
+; atm.vhd                          ; yes             ; User VHDL File  ; C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/atm.vhd         ;         ;
+; mux2x1.vhdl                      ; yes             ; User VHDL File  ; C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/mux2x1.vhdl     ;         ;
+; DUT.vhdl                         ; yes             ; User VHDL File  ; C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/DUT.vhdl        ;         ;
+; components.vhdl                  ; yes             ; User VHDL File  ; C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/components.vhdl ;         ;
++----------------------------------+-----------------+-----------------+-----------------------------------------------------------------------------+---------+
+
+
++-------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                   ;
++---------------------------------------------+---------------------------------+
+; Resource                                    ; Usage                           ;
++---------------------------------------------+---------------------------------+
+; Total logic elements                        ; 27                              ;
+;     -- Combinational with no register       ; 27                              ;
+;     -- Register only                        ; 0                               ;
+;     -- Combinational with a register        ; 0                               ;
+;                                             ;                                 ;
+; Logic element usage by number of LUT inputs ;                                 ;
+;     -- 4 input functions                    ; 17                              ;
+;     -- 3 input functions                    ; 6                               ;
+;     -- 2 input functions                    ; 4                               ;
+;     -- 1 input functions                    ; 0                               ;
+;     -- 0 input functions                    ; 0                               ;
+;                                             ;                                 ;
+; Logic elements by mode                      ;                                 ;
+;     -- normal mode                          ; 27                              ;
+;     -- arithmetic mode                      ; 0                               ;
+;     -- qfbk mode                            ; 0                               ;
+;     -- register cascade mode                ; 0                               ;
+;     -- synchronous clear/load mode          ; 0                               ;
+;     -- asynchronous clear/load mode         ; 0                               ;
+;                                             ;                                 ;
+; Total registers                             ; 0                               ;
+; I/O pins                                    ; 19                              ;
+; Maximum fan-out node                        ; atm:add_instance|div:d100|RQ[0] ;
+; Maximum fan-out                             ; 8                               ;
+; Total fan-out                               ; 105                             ;
+; Average fan-out                             ; 2.28                            ;
++---------------------------------------------+---------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                    ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                     ; Entity Name ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-------------+--------------+
+; |DUT                       ; 27 (0)      ; 0            ; 0          ; 19   ; 0            ; 27 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DUT                                                    ; DUT         ; work         ;
+;    |atm:add_instance|      ; 27 (0)      ; 0            ; 0          ; 0    ; 0            ; 27 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DUT|atm:add_instance                                   ; atm         ; work         ;
+;       |Mux2bit2x1:mx3|     ; 4 (0)       ; 0            ; 0          ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DUT|atm:add_instance|Mux2bit2x1:mx3                    ; Mux2bit2x1  ; work         ;
+;          |Mux2x1:m1|       ; 3 (0)       ; 0            ; 0          ; 0    ; 0            ; 3 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DUT|atm:add_instance|Mux2bit2x1:mx3|Mux2x1:m1          ; Mux2x1      ; work         ;
+;             |OR_2:or1|     ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DUT|atm:add_instance|Mux2bit2x1:mx3|Mux2x1:m1|OR_2:or1 ; OR_2        ; work         ;
+;          |Mux2x1:m2|       ; 1 (0)       ; 0            ; 0          ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DUT|atm:add_instance|Mux2bit2x1:mx3|Mux2x1:m2          ; Mux2x1      ; work         ;
+;             |OR_2:or1|     ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DUT|atm:add_instance|Mux2bit2x1:mx3|Mux2x1:m2|OR_2:or1 ; OR_2        ; work         ;
+;       |div:d100|           ; 12 (12)     ; 0            ; 0          ; 0    ; 0            ; 12 (12)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DUT|atm:add_instance|div:d100                          ; div         ; work         ;
+;       |div:d50|            ; 11 (11)     ; 0            ; 0          ; 0    ; 0            ; 11 (11)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DUT|atm:add_instance|div:d50                           ; div         ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------+-------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: atm:add_instance|div:d100 ;
++----------------+-------+-----------------------------------------------+
+; Parameter Name ; Value ; Type                                          ;
++----------------+-------+-----------------------------------------------+
+; n              ; 8     ; Signed Integer                                ;
+; nn             ; 16    ; Signed Integer                                ;
++----------------+-------+-----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: atm:add_instance|div:d50 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; n              ; 8     ; Signed Integer                               ;
+; nn             ; 16    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "atm:add_instance|Mux2bit2x1:mx3" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; i1   ; Input ; Info     ; Stuck at VCC                      ;
+; i3   ; Input ; Info     ; Stuck at VCC                      ;
++------+-------+----------+-----------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "atm:add_instance|Mux2bit2x1:mx2" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; i1   ; Input ; Info     ; Stuck at GND                      ;
+; i3   ; Input ; Info     ; Stuck at VCC                      ;
++------+-------+----------+-----------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "atm:add_instance|div:d50"                                                                 ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port       ; Type   ; Severity ; Details                                                                             ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+; d[5..4]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; d[7..6]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; d[3..2]    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; d[1]       ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; d[0]       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; rq[15..14] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; rq[7..1]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "atm:add_instance|div:d100"                                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; d[6..5]  ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; d[4..3]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; d[1..0]  ; Input  ; Info     ; Stuck at GND                                                                        ;
+; d[7]     ; Input  ; Info     ; Stuck at GND                                                                        ;
+; d[2]     ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; rq[7..2] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------+
+; Port Connectivity Checks: "atm:add_instance|Mux2bit2x1:mx1" ;
++------+-------+----------+-----------------------------------+
+; Port ; Type  ; Severity ; Details                           ;
++------+-------+----------+-----------------------------------+
+; i0   ; Input ; Info     ; Stuck at GND                      ;
+; i1   ; Input ; Info     ; Stuck at VCC                      ;
+; i2   ; Input ; Info     ; Stuck at GND                      ;
+; i3   ; Input ; Info     ; Stuck at GND                      ;
++------+-------+----------+-----------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Mon Sep 20 20:43:35 2021
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DenominationCounter -c DUT
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 17 design units, including 8 entities, in source file gates.vhd
+    Info (12022): Found design unit 1: Gates File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 3
+    Info (12022): Found design unit 2: INVERTER-Equations File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 45
+    Info (12022): Found design unit 3: AND_2-Equations File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 57
+    Info (12022): Found design unit 4: NAND_2-Equations File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 68
+    Info (12022): Found design unit 5: OR_2-Equations File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 79
+    Info (12022): Found design unit 6: NOR_2-Equations File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 90
+    Info (12022): Found design unit 7: XOR_2-Equations File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 102
+    Info (12022): Found design unit 8: XNOR_2-Equations File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 113
+    Info (12022): Found design unit 9: HALF_ADDER-Equations File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 124
+    Info (12023): Found entity 1: INVERTER File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 41
+    Info (12023): Found entity 2: AND_2 File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 53
+    Info (12023): Found entity 3: NAND_2 File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 64
+    Info (12023): Found entity 4: OR_2 File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 75
+    Info (12023): Found entity 5: NOR_2 File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 86
+    Info (12023): Found entity 6: XOR_2 File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 98
+    Info (12023): Found entity 7: XNOR_2 File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 109
+    Info (12023): Found entity 8: HALF_ADDER File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Gates.vhd Line: 120
+Info (12021): Found 2 design units, including 1 entities, in source file div.vhd
+    Info (12022): Found design unit 1: div-beh File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/div.vhd Line: 27
+    Info (12023): Found entity 1: div File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/div.vhd Line: 15
+Info (12021): Found 2 design units, including 1 entities, in source file atm.vhd
+    Info (12022): Found design unit 1: atm-struct File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/atm.vhd Line: 17
+    Info (12023): Found entity 1: atm File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/atm.vhd Line: 12
+Info (12021): Found 3 design units, including 1 entities, in source file mux2x1.vhdl
+    Info (12022): Found design unit 1: Muxpkg1 File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/mux2x1.vhdl Line: 3
+    Info (12022): Found design unit 2: Mux2x1-Beh File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/mux2x1.vhdl Line: 20
+    Info (12023): Found entity 1: Mux2x1 File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/mux2x1.vhdl Line: 15
+Info (12021): Found 2 design units, including 1 entities, in source file testbench.vhdl
+    Info (12022): Found design unit 1: Testbench-Behave File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Testbench.vhdl Line: 9
+    Info (12023): Found entity 1: Testbench File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/Testbench.vhdl Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file dut.vhdl
+    Info (12022): Found design unit 1: DUT-DutWrap File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/DUT.vhdl Line: 8
+    Info (12023): Found entity 1: DUT File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/DUT.vhdl Line: 3
+Info (12021): Found 7 design units, including 3 entities, in source file components.vhdl
+    Info (12022): Found design unit 1: components File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/components.vhdl Line: 5
+    Info (12022): Found design unit 2: Mux2bit2x1-B File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/components.vhdl Line: 28
+    Info (12022): Found design unit 3: IS100-B File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/components.vhdl Line: 42
+    Info (12022): Found design unit 4: CHECK-B File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/components.vhdl Line: 55
+    Info (12023): Found entity 1: Mux2bit2x1 File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/components.vhdl Line: 24
+    Info (12023): Found entity 2: IS100 File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/components.vhdl Line: 38
+    Info (12023): Found entity 3: CHECK File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/components.vhdl Line: 51
+Info (12127): Elaborating entity "DUT" for the top level hierarchy
+Info (12128): Elaborating entity "atm" for hierarchy "atm:add_instance" File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/DUT.vhdl Line: 13
+Info (12128): Elaborating entity "CHECK" for hierarchy "atm:add_instance|CHECK:Chk" File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/atm.vhd Line: 34
+Info (12128): Elaborating entity "OR_2" for hierarchy "atm:add_instance|CHECK:Chk|OR_2:or1" File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/components.vhdl Line: 58
+Info (12128): Elaborating entity "Mux2bit2x1" for hierarchy "atm:add_instance|Mux2bit2x1:mx1" File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/atm.vhd Line: 36
+Info (12128): Elaborating entity "Mux2x1" for hierarchy "atm:add_instance|Mux2bit2x1:mx1|Mux2x1:m1" File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/components.vhdl Line: 30
+Info (12128): Elaborating entity "INVERTER" for hierarchy "atm:add_instance|Mux2bit2x1:mx1|Mux2x1:m1|INVERTER:n1" File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/mux2x1.vhdl Line: 23
+Info (12128): Elaborating entity "AND_2" for hierarchy "atm:add_instance|Mux2bit2x1:mx1|Mux2x1:m1|AND_2:and1" File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/mux2x1.vhdl Line: 25
+Info (12128): Elaborating entity "div" for hierarchy "atm:add_instance|div:d100" File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/atm.vhd Line: 38
+Warning (10542): VHDL Variable Declaration warning at div.vhd(56): used initial value expression for variable "k" because variable was never assigned a value File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/div.vhd Line: 56
+Warning (10542): VHDL Variable Declaration warning at div.vhd(36): used initial value expression for variable "W" because variable was never assigned a value File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/div.vhd Line: 36
+Info (12128): Elaborating entity "IS100" for hierarchy "atm:add_instance|IS100:chk100" File: C:/Users/risha/OneDrive/Desktop/CS/vhdl/DenominationCounter/atm.vhd Line: 40
+Info (21057): Implemented 46 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 27 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4750 megabytes
+    Info: Processing ended: Mon Sep 20 20:43:50 2021
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:32
+
+

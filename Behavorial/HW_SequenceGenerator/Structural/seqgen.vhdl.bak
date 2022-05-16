@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.ff.all;
+entity seqgen is
+	port (clock,reset: in std_logic; y:out std_logic_vector (3 downto 0));
+end entity seqgen;
+
+architecture Beh of seqgen is
+signal ps:std_logic_vector (3 downto 0):="0001";
+begin
+	y(3)<= p(0) and (p(3) xor (p(1) and p(2)));
+	y(2)<= p(0) and (p(2) xor p(1));
+	y(1)<= p(0) and (not (p(1)));
+	y(0)<='1';
+	ps:=y;
+	a:ffr port map(clock=>clock;reset=>reset;D=>ns(3);y=>y(3));
+	b:ffr port map(clock=>clock;reset=>reset;D=>ns(2);y=>y(2));
+	c:ffr port map(clock=>clock;reset=>reset;D=>ns(1);y=>y(1));
+	d:ffs port map(clock=>clock;set=>reset;D=>ns(0);y=>y(0));
+end Beh;

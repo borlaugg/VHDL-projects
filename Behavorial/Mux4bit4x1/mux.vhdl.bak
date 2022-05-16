@@ -1,0 +1,17 @@
+entity mux is
+	port (a,b,c,d:in std_logic_vector(3 downto 0);s0,s1:in std_logic; o:out std_logic_vector(3 downto 0));
+end entity mux;
+
+architecture Beh of mux is
+mx:process
+	if(s1='0') and (s0='0') then 
+		o<=a;
+	elsif(s1='0') and (s0='1') then 
+		o<=b;
+	elsif(s1='1') and (s0='0') then 
+		o<=c;
+	else
+		o<=b;
+	end if;
+end process;
+end Beh;

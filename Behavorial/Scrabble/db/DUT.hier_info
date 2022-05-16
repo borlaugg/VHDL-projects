@@ -1,0 +1,16 @@
+|DUT
+input_vector[0] => Scrabble:add_instance.x[0]
+input_vector[1] => Scrabble:add_instance.x[1]
+input_vector[2] => Scrabble:add_instance.x[2]
+input_vector[3] => Scrabble:add_instance.x[3]
+output_vector[0] <= Scrabble:add_instance.o
+
+
+|DUT|Scrabble:add_instance
+x[0] => v.IN0
+x[1] => v.IN1
+x[2] => v.IN0
+x[3] => v.IN1
+o <= v.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,26 @@
+|DUT
+input_vector[0] => Seq:add_instance.clk
+input_vector[1] => Seq:add_instance.reset
+output_vector[0] << Seq:add_instance.y[0]
+output_vector[1] << Seq:add_instance.y[1]
+output_vector[2] << Seq:add_instance.y[2]
+
+
+|DUT|Seq:add_instance
+clk => y[0]~reg0.CLK
+clk => y[1]~reg0.CLK
+clk => y[2]~reg0.CLK
+clk => \s:x[0].CLK
+clk => \s:x[1].CLK
+clk => \s:x[2].CLK
+reset => y[0]~reg0.ACLR
+reset => y[1]~reg0.PRESET
+reset => y[2]~reg0.PRESET
+reset => \s:x[2].ENA
+reset => \s:x[1].ENA
+reset => \s:x[0].ENA
+y[0] <= y[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= y[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= y[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

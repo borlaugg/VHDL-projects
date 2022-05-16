@@ -1,0 +1,52 @@
+|DUT
+input_vector[0] => seqgen:add_instance.clock
+input_vector[1] => seqgen:add_instance.reset
+output_vector[0] <= seqgen:add_instance.y[0]
+output_vector[1] <= seqgen:add_instance.y[1]
+output_vector[2] <= seqgen:add_instance.y[2]
+output_vector[3] <= seqgen:add_instance.y[3]
+
+
+|DUT|seqgen:add_instance
+clock => ffr:a.clock
+clock => ffr:b.clock
+clock => ffr:c.clock
+clock => ffs:d.clock
+reset => ffr:a.reset
+reset => ffr:b.reset
+reset => ffr:c.reset
+reset => ffs:d.set
+y[0] <= ffs:d.y
+y[1] <= ffr:c.y
+y[2] <= ffr:b.y
+y[3] <= ffr:a.y
+
+
+|DUT|seqgen:add_instance|ffr:a
+reset => y~reg0.ACLR
+clock => y~reg0.CLK
+D => y~reg0.DATAIN
+y <= y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|seqgen:add_instance|ffr:b
+reset => y~reg0.ACLR
+clock => y~reg0.CLK
+D => y~reg0.DATAIN
+y <= y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|seqgen:add_instance|ffr:c
+reset => y~reg0.ACLR
+clock => y~reg0.CLK
+D => y~reg0.DATAIN
+y <= y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|seqgen:add_instance|ffs:d
+set => y~reg0.PRESET
+clock => y~reg0.CLK
+D => y~reg0.DATAIN
+y <= y~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

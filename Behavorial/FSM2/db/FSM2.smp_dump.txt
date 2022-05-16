@@ -1,0 +1,10 @@
+
+State Machine - |DUT|krypton:add_instance|y_present
+Name y_present.s6 y_present.s5 y_present.s4 y_present.s3 y_present.s2 y_present.s1 y_present.rst 
+y_present.rst 0 0 0 0 0 0 0 
+y_present.s1 0 0 0 0 0 1 1 
+y_present.s2 0 0 0 0 1 0 1 
+y_present.s3 0 0 0 1 0 0 1 
+y_present.s4 0 0 1 0 0 0 1 
+y_present.s5 0 1 0 0 0 0 1 
+y_present.s6 1 0 0 0 0 0 1 

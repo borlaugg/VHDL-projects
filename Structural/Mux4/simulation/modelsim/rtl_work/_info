@@ -1,0 +1,348 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/simulation/modelsim
+Eand_2
+Z1 w1628625266
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/gates.vhdl
+Z5 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/gates.vhdl
+l0
+L32 1
+V<l5GfjP27fo@N<l6IAV3D2
+!s100 `YFVXfI_LU^LPPG3U3:H62
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1629285235
+!i10b 1
+Z8 !s108 1629285235.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/gates.vhdl|
+Z10 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/gates.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aequations
+R2
+R3
+DEx4 work 5 and_2 0 22 <l5GfjP27fo@N<l6IAV3D2
+!i122 0
+l37
+L36 4
+VYJ0HHC<CSe6@>GG^NBGRm1
+!s100 [`j8;iRmUokZcYm[?SX<52
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1628627645
+R2
+R3
+!i122 1
+R0
+Z14 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/DUT.vhd
+Z15 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/DUT.vhd
+l0
+L3 1
+VQDePinZiYKW=:1RkkKGlN1
+!s100 m=ZlQME_A_2`zE2ANa3PH2
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/DUT.vhd|
+Z17 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/DUT.vhd|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 QDePinZiYKW=:1RkkKGlN1
+!i122 1
+l13
+L8 18
+Ve1GF2QjLnj4lZaj[[[2VR1
+!s100 _WcizHMNQ`[=BaEe0eKn01
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Pgates
+R2
+R3
+!i122 0
+R1
+R0
+R4
+R5
+l0
+L3 1
+VKz?nZPm7PBV0:eI8711?h1
+!s100 JIWXmzY1Ph6T<C^`mcz@12
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Einverter
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L21 1
+VJ;EAMnc[<QGkT4NE`h[Gl0
+!s100 j9cZ`GED=V[^O8n<SWF>[2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 8 inverter 0 22 J;EAMnc[<QGkT4NE`h[Gl0
+!i122 0
+l26
+L25 4
+VBI^eb=CeF:<24^]@eI5Va1
+!s100 DH:PLGm5INjge:Z0o_4ob0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Emux2x1
+Z18 w1628625885
+Z19 DPx4 work 5 gates 0 22 Kz?nZPm7PBV0:eI8711?h1
+R2
+R3
+!i122 2
+R0
+Z20 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/2x1mux.vhd
+Z21 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/2x1mux.vhd
+l0
+L15 1
+Ve[V4g50Mf[c0?5h]bS]L52
+!s100 7PXnLF]fOaj^NT57oc3lV2
+R6
+31
+Z22 !s110 1629285236
+!i10b 1
+Z23 !s108 1629285236.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/2x1mux.vhd|
+Z25 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/2x1mux.vhd|
+!i113 1
+R11
+R12
+Abeh
+R19
+R2
+R3
+DEx4 work 6 mux2x1 0 22 e[V4g50Mf[c0?5h]bS]L52
+!i122 2
+l22
+L20 12
+Vfi4;PEe79X@?VWVP`GR[V2
+!s100 41@YY;=[7W8B2M[DEJU4O1
+R6
+31
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R11
+R12
+Emux4x1
+Z26 w1628628111
+Z27 DPx4 work 7 muxpkg1 0 22 ?ZL@z6[le93V1K<ac:N_X0
+R19
+R2
+R3
+!i122 3
+R0
+Z28 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/4x1Mux.vhd
+Z29 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/4x1Mux.vhd
+l0
+L7 1
+V]eERb<kfNfa5kDHmn[<X60
+!s100 2K@`j1>UVG]G<94f9MLzO3
+R6
+31
+R22
+!i10b 1
+R23
+Z30 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/4x1Mux.vhd|
+Z31 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/4x1Mux.vhd|
+!i113 1
+R11
+R12
+Abeh
+R27
+R19
+R2
+R3
+DEx4 work 6 mux4x1 0 22 ]eERb<kfNfa5kDHmn[<X60
+!i122 3
+l14
+L12 10
+VI]1ZSbMfWnU[kIm^>SE_A0
+!s100 CDB8jT081bdimY=VNXBHN0
+R6
+31
+R22
+!i10b 1
+R23
+R30
+R31
+!i113 1
+R11
+R12
+Pmuxpkg1
+R2
+R3
+!i122 2
+R18
+R0
+R20
+R21
+l0
+L3 1
+V?ZL@z6[le93V1K<ac:N_X0
+!s100 Z:GK=aSaQ8occP2CUc?S]3
+R6
+31
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R11
+R12
+Eor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L43 1
+VM9mYkafZUGhzZDf0[V_3W1
+!s100 1eFXLTJ:Ul5QC6_2_>7K12
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 4 or_2 0 22 M9mYkafZUGhzZDf0[V_3W1
+!i122 0
+l48
+L47 4
+VTGOSNcHX47QESN3C9GEM22
+!s100 k>>XIcMf:EWhUW:EEgk^g1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z32 w1628628316
+R3
+R2
+!i122 4
+R0
+Z33 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/Testbench.vhdl
+Z34 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R22
+!i10b 1
+R23
+Z35 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/Testbench.vhdl|
+!s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 4
+l69
+L9 132
+VmG[JmmG5lOKPfnP>8c0SJ2
+!s100 YAcOCG_0hi1jOn`oC^geN1
+R6
+31
+R22
+!i10b 1
+R23
+R35
+Z36 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Mux4/db/Testbench.vhdl|
+!i113 1
+R11
+R12

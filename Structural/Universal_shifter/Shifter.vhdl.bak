@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library work;
+use work.Gates.all;
+library work;
+use work.mux.all;
+library work;
+use work.shift.all;
+entity Shifter is
+	port(a7,a6,a5,a4,a3,a2,a1,a0,b2,b1,b0,L:in std_logic; s7,s6,s5,s4,s3,s2,s1,s0:out std_logic);
+end Shifter;
+
+architecture B of Shifter is
+	signal b,c,d,e:std_logic_vector(7 downto 0);
+	begin
+		inv1:inversion port map(A(7)=>a7,A(6)=>a6,A(5)=>a5,A(4)=>a4,A(3)=>3,A(2)=>a2,A(1)=>a1,A(0)=>a0,L=>L,C=>b);
+		rs4:RS4 port map(a1=>b;b2=>b2;p=>c);
+		rs2:RS2 port map(a1=>c;b2=>b1;p=>d);
+		rs1:RS1 port map(a1=>d;b2=>b0;p=>e);
+		inv2:inversion port map(A=>e,L=>L,C(7)=>s7,C(6)=>s6,C(5)=>s5,C(4)=>s4,C(3)=>s3,C(2)=>s2,C(1)=>s1,C(0)=>s0);
+end B;

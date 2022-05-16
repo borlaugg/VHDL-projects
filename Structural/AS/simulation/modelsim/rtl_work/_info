@@ -1,0 +1,348 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/simulation/modelsim
+Eaddersubtractor
+Z1 w1628409279
+Z2 DPx4 work 5 gates 0 22 Q187HQ@]kHe6h?Y6On3VP3
+Z3 DPx4 work 2 fa 0 22 SAZPWlcTzma7nlWU:RbLc1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+R0
+Z6 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/ADDersub.vhd
+Z7 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/ADDersub.vhd
+l0
+L7 1
+VM<NUgEU@j;H`gKE4IdeX93
+!s100 6TZV`fh=BCn]JR?OKHjIf3
+Z8 OV;C;2020.1;71
+31
+Z9 !s110 1628673070
+!i10b 1
+Z10 !s108 1628673070.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/ADDersub.vhd|
+Z12 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/ADDersub.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Aarch
+R2
+R3
+R4
+R5
+DEx4 work 15 addersubtractor 0 22 M<NUgEU@j;H`gKE4IdeX93
+!i122 3
+l14
+L12 20
+Vhi=Hb0[ELG;m>DZBm8KAO2
+!s100 CL^WLS;::jnEbDeKbB0Hf2
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Edut
+Z15 w1628410844
+R4
+R5
+!i122 1
+R0
+Z16 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/DUT.vhd
+Z17 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/DUT.vhd
+l0
+L3 1
+V8FZ8f`T;8eD^Vm?4CoC<Z0
+!s100 Rd9<==W];dePC8VzYnOGf0
+R8
+31
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/DUT.vhd|
+Z19 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/DUT.vhd|
+!i113 1
+R13
+R14
+Adutwrap
+R4
+R5
+DEx4 work 3 dut 0 22 8FZ8f`T;8eD^Vm?4CoC<Z0
+!i122 1
+l13
+L8 22
+VO`egUFa71C``c8d^KAoSn3
+!s100 TcAG8Un8^Kjo?VHTRFKkh2
+R8
+31
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14
+Pfa
+R4
+R5
+!i122 2
+Z20 w1628409127
+R0
+Z21 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/FullADDER.vhd
+Z22 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/FullADDER.vhd
+l0
+L3 1
+VSAZPWlcTzma7nlWU:RbLc1
+!s100 ;QV;R?MGM20z:;a0hMePH3
+R8
+31
+R9
+!i10b 1
+R10
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/FullADDER.vhd|
+Z24 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/FullADDER.vhd|
+!i113 1
+R13
+R14
+Efull_adder
+R20
+R2
+R4
+R5
+!i122 2
+R0
+R21
+R22
+l0
+L14 1
+V:22Cb18J=VW;dR62eL@R<2
+!s100 fV_LLDXk?bd13Rzj8SZag1
+R8
+31
+R9
+!i10b 1
+R10
+R23
+R24
+!i113 1
+R13
+R14
+Abehaviour
+R2
+R4
+R5
+DEx4 work 10 full_adder 0 22 :22Cb18J=VW;dR62eL@R<2
+!i122 2
+l21
+L19 10
+VPgb]@NN7?cNhR7d:Q>:^o1
+!s100 o7BPU3R_AgY`;@g5Q;<d52
+R8
+31
+R9
+!i10b 1
+R10
+R23
+R24
+!i113 1
+R13
+R14
+Pgates
+R4
+R5
+!i122 0
+Z25 w1628408883
+R0
+Z26 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/gates.vhd
+Z27 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/gates.vhd
+l0
+L3 1
+VQ187HQ@]kHe6h?Y6On3VP3
+!s100 oDT?o?B`6kaehk:KL1?>j3
+R8
+31
+R9
+!i10b 1
+R10
+Z28 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/gates.vhd|
+Z29 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/db/gates.vhd|
+!i113 1
+R13
+R14
+Ehalf_adder
+R25
+R4
+R5
+!i122 0
+R0
+R26
+R27
+l0
+L42 1
+VmRd=B@ddPXfb1<7edDLEe1
+!s100 @<@Onb`HPi?7Y^L_GY;RQ1
+R8
+31
+R9
+!i10b 1
+R10
+R28
+R29
+!i113 1
+R13
+R14
+Aequations
+R4
+R5
+DEx4 work 10 half_adder 0 22 mRd=B@ddPXfb1<7edDLEe1
+!i122 0
+l47
+L46 5
+V3WN2RQ?BgO6eABd?Yh42h1
+!s100 Rz8Gjl=^iV:?]@34`CD><2
+R8
+31
+R9
+!i10b 1
+R10
+R28
+R29
+!i113 1
+R13
+R14
+Eor_2
+R25
+R4
+R5
+!i122 0
+R0
+R26
+R27
+l0
+L31 1
+Vj<4M<Y?4zA?kE>l=BQmAc1
+!s100 27lM<6loKmDM8nTaOYHKb1
+R8
+31
+R9
+!i10b 1
+R10
+R28
+R29
+!i113 1
+R13
+R14
+Aequations
+R4
+R5
+DEx4 work 4 or_2 0 22 j<4M<Y?4zA?kE>l=BQmAc1
+!i122 0
+l36
+L35 4
+V<FlCl@F?o95:zg=C>8B_61
+!s100 F?UzN]Qh=ciIP_?Z6;CfT1
+R8
+31
+R9
+!i10b 1
+R10
+R28
+R29
+!i113 1
+R13
+R14
+Etestbench
+Z30 w1628412031
+R5
+R4
+!i122 4
+R0
+Z31 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/Testbench.vhdl
+Z32 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R8
+31
+R9
+!i10b 1
+R10
+Z33 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/Testbench.vhdl|
+!s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/Testbench.vhdl|
+!i113 1
+R13
+R14
+Abehave
+R5
+R4
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 4
+l69
+L9 132
+VbUP;01Z1GFWTBPRVhU:BB3
+!s100 Z3I:TjUD>?T2__5USb_=71
+R8
+31
+R9
+!i10b 1
+R10
+R33
+Z34 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/AS/Testbench.vhdl|
+!i113 1
+R13
+R14
+Exor_2
+R25
+R4
+R5
+!i122 0
+R0
+R26
+R27
+l0
+L20 1
+VM;5OH0XhTXmL@nFM:3^Il1
+!s100 gnHPO91OY3hMXmY?jBDQT2
+R8
+31
+R9
+!i10b 1
+R10
+R28
+R29
+!i113 1
+R13
+R14
+Aequations
+R4
+R5
+DEx4 work 5 xor_2 0 22 M;5OH0XhTXmL@nFM:3^Il1
+!i122 0
+l25
+L24 4
+VKFO98Me3@]kZj;LK_8I983
+!s100 N8hk1Ma8OKh0QdF2MNCDn0
+R8
+31
+R9
+!i10b 1
+R10
+R28
+R29
+!i113 1
+R13
+R14

@@ -1,0 +1,351 @@
+Timing Analyzer report for DUT
+Sat Oct 23 20:34:10 2021
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Timing Analyzer Summary
+  3. Parallel Compilation
+  4. Clocks
+  5. Fmax Summary
+  6. Setup Summary
+  7. Hold Summary
+  8. Recovery Summary
+  9. Removal Summary
+ 10. Minimum Pulse Width Summary
+ 11. Setup: 'input_vector[0]'
+ 12. Setup: 'input_vector[1]'
+ 13. Hold: 'input_vector[1]'
+ 14. Hold: 'input_vector[0]'
+ 15. Setup Transfers
+ 16. Hold Transfers
+ 17. Report TCCS
+ 18. Report RSKM
+ 19. Unconstrained Paths Summary
+ 20. Clock Status Summary
+ 21. Unconstrained Input Ports
+ 22. Unconstrained Output Ports
+ 23. Unconstrained Input Ports
+ 24. Unconstrained Output Ports
+ 25. Timing Analyzer Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-----------------------------------------------------------------------------+
+; Timing Analyzer Summary                                                     ;
++-----------------------+-----------------------------------------------------+
+; Quartus Prime Version ; Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Timing Analyzer       ; Legacy Timing Analyzer                              ;
+; Revision Name         ; DUT                                                 ;
+; Device Family         ; MAX V                                               ;
+; Device Name           ; 5M1270ZT144C5                                       ;
+; Timing Models         ; Final                                               ;
+; Delay Model           ; Slow Model                                          ;
+; Rise/Fall Delays      ; Unavailable                                         ;
++-----------------------+-----------------------------------------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                           ;
++-----------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------+
+; Clock Name      ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets             ;
++-----------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------+
+; input_vector[0] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { input_vector[0] } ;
+; input_vector[1] ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { input_vector[1] } ;
++-----------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+---------------------+
+
+
++-------------------------------------------------------+
+; Fmax Summary                                          ;
++------------+-----------------+-----------------+------+
+; Fmax       ; Restricted Fmax ; Clock Name      ; Note ;
++------------+-----------------+-----------------+------+
+; 136.54 MHz ; 136.54 MHz      ; input_vector[1] ;      ;
++------------+-----------------+-----------------+------+
+This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
+
+
++------------------------------------------+
+; Setup Summary                            ;
++-----------------+--------+---------------+
+; Clock           ; Slack  ; End Point TNS ;
++-----------------+--------+---------------+
+; input_vector[0] ; -6.067 ; -11.623       ;
+; input_vector[1] ; -3.505 ; -5.934        ;
++-----------------+--------+---------------+
+
+
++------------------------------------------+
+; Hold Summary                             ;
++-----------------+--------+---------------+
+; Clock           ; Slack  ; End Point TNS ;
++-----------------+--------+---------------+
+; input_vector[1] ; -0.356 ; -0.356        ;
+; input_vector[0] ; 6.002  ; 0.000         ;
++-----------------+--------+---------------+
+
+
+--------------------
+; Recovery Summary ;
+--------------------
+No paths to report.
+
+
+-------------------
+; Removal Summary ;
+-------------------
+No paths to report.
+
+
++------------------------------------------+
+; Minimum Pulse Width Summary              ;
++-----------------+--------+---------------+
+; Clock           ; Slack  ; End Point TNS ;
++-----------------+--------+---------------+
+; input_vector[0] ; -2.289 ; -2.289        ;
+; input_vector[1] ; -2.289 ; -2.289        ;
++-----------------+--------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'input_vector[0]'                                                                                                                               ;
++--------+---------------------------+--------------------------------------+-----------------+-----------------+--------------+------------+------------+
+; Slack  ; From Node                 ; To Node                              ; Launch Clock    ; Latch Clock     ; Relationship ; Clock Skew ; Data Delay ;
++--------+---------------------------+--------------------------------------+-----------------+-----------------+--------------+------------+------------+
+; -6.067 ; SerialComp:add_instance|l ; SerialComp:add_instance|y_present.lt ; input_vector[1] ; input_vector[0] ; 0.500        ; -4.365     ; 1.869      ;
+; -5.556 ; SerialComp:add_instance|g ; SerialComp:add_instance|y_present.gt ; input_vector[1] ; input_vector[0] ; 0.500        ; -4.690     ; 1.033      ;
++--------+---------------------------+--------------------------------------+-----------------+-----------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup: 'input_vector[1]'                                                                                                                               ;
++--------+--------------------------------------+---------------------------+-----------------+-----------------+--------------+------------+------------+
+; Slack  ; From Node                            ; To Node                   ; Launch Clock    ; Latch Clock     ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------+---------------------------+-----------------+-----------------+--------------+------------+------------+
+; -3.505 ; SerialComp:add_instance|y_present.lt ; SerialComp:add_instance|l ; input_vector[0] ; input_vector[1] ; 0.500        ; 4.365      ; 6.059      ;
+; -3.162 ; input_vector[1]                      ; SerialComp:add_instance|l ; input_vector[1] ; input_vector[1] ; 0.500        ; 8.184      ; 9.535      ;
+; -3.028 ; SerialComp:add_instance|y_present.gt ; SerialComp:add_instance|l ; input_vector[0] ; input_vector[1] ; 0.500        ; 4.365      ; 5.582      ;
+; -2.662 ; input_vector[1]                      ; SerialComp:add_instance|l ; input_vector[1] ; input_vector[1] ; 1.000        ; 8.184      ; 9.535      ;
+; -2.429 ; input_vector[1]                      ; SerialComp:add_instance|g ; input_vector[1] ; input_vector[1] ; 0.500        ; 8.509      ; 9.249      ;
+; -2.368 ; SerialComp:add_instance|y_present.lt ; SerialComp:add_instance|g ; input_vector[0] ; input_vector[1] ; 0.500        ; 4.690      ; 5.369      ;
+; -2.166 ; SerialComp:add_instance|y_present.gt ; SerialComp:add_instance|g ; input_vector[0] ; input_vector[1] ; 0.500        ; 4.690      ; 5.167      ;
+; -1.929 ; input_vector[1]                      ; SerialComp:add_instance|g ; input_vector[1] ; input_vector[1] ; 1.000        ; 8.509      ; 9.249      ;
++--------+--------------------------------------+---------------------------+-----------------+-----------------+--------------+------------+------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'input_vector[1]'                                                                                                                                ;
++--------+--------------------------------------+---------------------------+-----------------+-----------------+--------------+------------+------------+
+; Slack  ; From Node                            ; To Node                   ; Launch Clock    ; Latch Clock     ; Relationship ; Clock Skew ; Data Delay ;
++--------+--------------------------------------+---------------------------+-----------------+-----------------+--------------+------------+------------+
+; -0.356 ; SerialComp:add_instance|y_present.gt ; SerialComp:add_instance|g ; input_vector[0] ; input_vector[1] ; -0.500       ; 4.690      ; 3.834      ;
+; -0.328 ; input_vector[1]                      ; SerialComp:add_instance|g ; input_vector[1] ; input_vector[1] ; 0.000        ; 8.509      ; 8.181      ;
+; 0.080  ; SerialComp:add_instance|y_present.lt ; SerialComp:add_instance|g ; input_vector[0] ; input_vector[1] ; -0.500       ; 4.690      ; 4.270      ;
+; 0.172  ; input_vector[1]                      ; SerialComp:add_instance|g ; input_vector[1] ; input_vector[1] ; -0.500       ; 8.509      ; 8.181      ;
+; 0.687  ; input_vector[1]                      ; SerialComp:add_instance|l ; input_vector[1] ; input_vector[1] ; 0.000        ; 8.184      ; 8.871      ;
+; 0.728  ; SerialComp:add_instance|y_present.gt ; SerialComp:add_instance|l ; input_vector[0] ; input_vector[1] ; -0.500       ; 4.365      ; 4.593      ;
+; 0.820  ; SerialComp:add_instance|y_present.lt ; SerialComp:add_instance|l ; input_vector[0] ; input_vector[1] ; -0.500       ; 4.365      ; 4.685      ;
+; 1.187  ; input_vector[1]                      ; SerialComp:add_instance|l ; input_vector[1] ; input_vector[1] ; -0.500       ; 8.184      ; 8.871      ;
++--------+--------------------------------------+---------------------------+-----------------+-----------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold: 'input_vector[0]'                                                                                                                               ;
++-------+---------------------------+--------------------------------------+-----------------+-----------------+--------------+------------+------------+
+; Slack ; From Node                 ; To Node                              ; Launch Clock    ; Latch Clock     ; Relationship ; Clock Skew ; Data Delay ;
++-------+---------------------------+--------------------------------------+-----------------+-----------------+--------------+------------+------------+
+; 6.002 ; SerialComp:add_instance|g ; SerialComp:add_instance|y_present.gt ; input_vector[1] ; input_vector[0] ; -0.500       ; -4.690     ; 1.033      ;
+; 6.513 ; SerialComp:add_instance|l ; SerialComp:add_instance|y_present.lt ; input_vector[1] ; input_vector[0] ; -0.500       ; -4.365     ; 1.869      ;
++-------+---------------------------+--------------------------------------+-----------------+-----------------+--------------+------------+------------+
+
+
++-------------------------------------------------------------------------------+
+; Setup Transfers                                                               ;
++-----------------+-----------------+----------+----------+----------+----------+
+; From Clock      ; To Clock        ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------+-----------------+----------+----------+----------+----------+
+; input_vector[1] ; input_vector[0] ; 0        ; 2        ; 0        ; 0        ;
+; input_vector[0] ; input_vector[1] ; 0        ; 0        ; 8        ; 0        ;
+; input_vector[1] ; input_vector[1] ; 0        ; 0        ; 6        ; 6        ;
++-----------------+-----------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
++-------------------------------------------------------------------------------+
+; Hold Transfers                                                                ;
++-----------------+-----------------+----------+----------+----------+----------+
+; From Clock      ; To Clock        ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++-----------------+-----------------+----------+----------+----------+----------+
+; input_vector[1] ; input_vector[0] ; 0        ; 2        ; 0        ; 0        ;
+; input_vector[0] ; input_vector[1] ; 0        ; 0        ; 8        ; 0        ;
+; input_vector[1] ; input_vector[1] ; 0        ; 0        ; 6        ; 6        ;
++-----------------+-----------------+----------+----------+----------+----------+
+Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
+
+
+---------------
+; Report TCCS ;
+---------------
+No dedicated SERDES Transmitter circuitry present in device or used in design
+
+
+---------------
+; Report RSKM ;
+---------------
+No non-DPA dedicated SERDES Receiver circuitry present in device or used in design
+
+
++------------------------------------------------+
+; Unconstrained Paths Summary                    ;
++---------------------------------+-------+------+
+; Property                        ; Setup ; Hold ;
++---------------------------------+-------+------+
+; Illegal Clocks                  ; 0     ; 0    ;
+; Unconstrained Clocks            ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 2     ; 2    ;
+; Unconstrained Input Port Paths  ; 6     ; 6    ;
+; Unconstrained Output Ports      ; 2     ; 2    ;
+; Unconstrained Output Port Paths ; 2     ; 2    ;
++---------------------------------+-------+------+
+
+
++--------------------------------------------------------+
+; Clock Status Summary                                   ;
++-----------------+-----------------+------+-------------+
+; Target          ; Clock           ; Type ; Status      ;
++-----------------+-----------------+------+-------------+
+; input_vector[0] ; input_vector[0] ; Base ; Constrained ;
+; input_vector[1] ; input_vector[1] ; Base ; Constrained ;
++-----------------+-----------------+------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                              ;
++-----------------+--------------------------------------------------------------------------------------+
+; Input Port      ; Comment                                                                              ;
++-----------------+--------------------------------------------------------------------------------------+
+; input_vector[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; input_vector[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-----------------+--------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                               ;
++------------------+---------------------------------------------------------------------------------------+
+; Output Port      ; Comment                                                                               ;
++------------------+---------------------------------------------------------------------------------------+
+; output_vector[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; output_vector[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                              ;
++-----------------+--------------------------------------------------------------------------------------+
+; Input Port      ; Comment                                                                              ;
++-----------------+--------------------------------------------------------------------------------------+
+; input_vector[2] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; input_vector[3] ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-----------------+--------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                               ;
++------------------+---------------------------------------------------------------------------------------+
+; Output Port      ; Comment                                                                               ;
++------------------+---------------------------------------------------------------------------------------+
+; output_vector[0] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; output_vector[1] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------------+---------------------------------------------------------------------------------------+
+
+
++--------------------------+
+; Timing Analyzer Messages ;
++--------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Timing Analyzer
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Sat Oct 23 20:34:10 2021
+Info: Command: quartus_sta SerialComparator -c DUT
+Info: qsta_default_script.tcl version: #1
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (21077): Low junction temperature is 0 degrees C
+Info (21077): High junction temperature is 85 degrees C
+Info (334003): Started post-fitting delay annotation
+Info (334004): Delay annotation completed successfully
+Warning (335093): The Timing Analyzer is analyzing 2 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Critical Warning (332012): Synopsys Design Constraints File file not found: 'DUT.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
+Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
+Info (332105): Deriving Clocks
+    Info (332105): create_clock -period 1.000 -name input_vector[1] input_vector[1]
+    Info (332105): create_clock -period 1.000 -name input_vector[0] input_vector[0]
+Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
+Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
+Critical Warning (332148): Timing requirements not met
+Info (332146): Worst-case setup slack is -6.067
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -6.067             -11.623 input_vector[0] 
+    Info (332119):    -3.505              -5.934 input_vector[1] 
+Info (332146): Worst-case hold slack is -0.356
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -0.356              -0.356 input_vector[1] 
+    Info (332119):     6.002               0.000 input_vector[0] 
+Info (332140): No Recovery paths to report
+Info (332140): No Removal paths to report
+Info (332146): Worst-case minimum pulse width slack is -2.289
+    Info (332119):     Slack       End Point TNS Clock 
+    Info (332119): ========= =================== =====================
+    Info (332119):    -2.289              -2.289 input_vector[0] 
+    Info (332119):    -2.289              -2.289 input_vector[1] 
+Info (332001): The selected device family is not supported by the report_metastability command.
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4676 megabytes
+    Info: Processing ended: Sat Oct 23 20:34:10 2021
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+

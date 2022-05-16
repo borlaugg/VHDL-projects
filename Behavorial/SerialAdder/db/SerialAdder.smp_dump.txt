@@ -1,0 +1,6 @@
+
+State Machine - |DUT|SerialAdder:add_instance|pres
+Name pres.c1 pres.c0 pres.rst 
+pres.rst 0 0 0 
+pres.c0 0 1 1 
+pres.c1 1 0 1 

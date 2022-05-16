@@ -1,0 +1,136 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/simulation/modelsim
+Ecovid
+Z1 w1633458668
+Z2 DPx4 ieee 11 numeric_std 0 22 aU^R8eGcicLcUFIaBQSL>3
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z5 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/covid.vhdl
+Z6 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/covid.vhdl
+l0
+L5 1
+VfC8iH^W5?]>bOj2K039AZ3
+!s100 3Vo^RG@KQ]STTS5G[Q_Bf2
+Z7 OV;C;2020.1;71
+31
+Z8 !s110 1633458700
+!i10b 1
+Z9 !s108 1633458700.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/covid.vhdl|
+Z11 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/covid.vhdl|
+!i113 1
+Z12 o-93 -work work
+Z13 tExplicit 1 CvgOpt 0
+Arch
+R2
+R3
+R4
+DEx4 work 5 covid 0 22 fC8iH^W5?]>bOj2K039AZ3
+!i122 1
+l18
+L11 67
+VYU@gi5maDJIdna0U^Lh303
+!s100 7gN^eX>ka>@_d83CgoVh31
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13
+Edut
+Z14 w1633454976
+R3
+R4
+!i122 0
+R0
+Z15 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/DUT.vhdl
+Z16 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/DUT.vhdl
+l0
+L3 1
+V<mB:YUi921Zn=3oR8jJ[U2
+!s100 mP205FUQWZK_9DEmW@@z03
+R7
+31
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/DUT.vhdl|
+Z18 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/DUT.vhdl|
+!i113 1
+R12
+R13
+Adutwrap
+R3
+R4
+DEx4 work 3 dut 0 22 <mB:YUi921Zn=3oR8jJ[U2
+!i122 0
+l14
+L8 15
+VRoOF7HDdhldWHBPlaf_Ik1
+!s100 fV2WXmkOLRZIB?Z]ZJKNM3
+R7
+31
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R12
+R13
+Etestbench
+Z19 w1633453943
+R4
+R3
+!i122 2
+R0
+Z20 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/Testbench.vhdl
+Z21 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R7
+31
+R8
+!i10b 1
+R9
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/Testbench.vhdl|
+!s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/Testbench.vhdl|
+!i113 1
+R12
+R13
+Abehave
+R4
+R3
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 2
+l69
+L9 132
+Vz2aN_6`AZJS5C4C_W?Iko1
+!s100 bRMek<8M^2HFT4ABh`UN40
+R7
+31
+R8
+!i10b 1
+R9
+R22
+Z23 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/FSM1/Testbench.vhdl|
+!i113 1
+R12
+R13

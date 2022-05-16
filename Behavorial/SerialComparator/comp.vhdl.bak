@@ -1,0 +1,35 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity SerialComp is
+port (reset, a,b: in std_logic; clock: in std_logic; g, l: out std_logic);
+end entity SerialComp;
+
+architecture Beh of SerialComp is
+	type state is (rst,gt,lt,eq);
+	signal nxt,curr: state :=rst;
+	begin
+		cl:process (clock,reset)
+		begin
+			if (clock' event and clock='1') then
+				curr<=nxt;
+			elsif (reset='1') then
+				curr<=rst;
+				g<='0';
+				l<='0';
+			end if;
+		end process;
+	   
+	   transit:process (curr,a,b)
+		begin
+			case curr is
+				when rst=>
+					if (a='0' xnor b='0') then
+						nxt<=eq;
+						g<='0';
+						l<='0';
+					elsif (a='0' and b='1') then
+						nxt<=lt;
+						g<='';
+	   end proceess;	
+end Beh;

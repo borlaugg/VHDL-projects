@@ -1,0 +1,46 @@
+|DUT
+input_vector[0] => covid:add_instance.clock
+input_vector[1] => covid:add_instance.reset
+input_vector[2] => covid:add_instance.inp[0]
+input_vector[3] => covid:add_instance.inp[1]
+input_vector[4] => covid:add_instance.inp[2]
+input_vector[5] => covid:add_instance.inp[3]
+input_vector[6] => covid:add_instance.inp[4]
+output_vector[0] << covid:add_instance.outp
+
+
+|DUT|covid:add_instance
+inp[0] => Equal0.IN9
+inp[0] => Equal1.IN9
+inp[0] => Equal2.IN9
+inp[0] => Equal3.IN9
+inp[0] => Equal4.IN9
+inp[1] => Equal0.IN8
+inp[1] => Equal1.IN8
+inp[1] => Equal2.IN8
+inp[1] => Equal3.IN8
+inp[1] => Equal4.IN8
+inp[2] => Equal0.IN7
+inp[2] => Equal1.IN7
+inp[2] => Equal2.IN7
+inp[2] => Equal3.IN7
+inp[2] => Equal4.IN7
+inp[3] => Equal0.IN6
+inp[3] => Equal1.IN6
+inp[3] => Equal2.IN6
+inp[3] => Equal3.IN6
+inp[3] => Equal4.IN6
+inp[4] => Equal0.IN5
+inp[4] => Equal1.IN5
+inp[4] => Equal2.IN5
+inp[4] => Equal3.IN5
+inp[4] => Equal4.IN5
+reset => y_present.OUTPUTSELECT
+reset => y_present.OUTPUTSELECT
+reset => y_present.OUTPUTSELECT
+reset => y_present.OUTPUTSELECT
+reset => y_present.OUTPUTSELECT
+clock => y_present~1.DATAIN
+outp <= outp.DB_MAX_OUTPUT_PORT_TYPE
+
+

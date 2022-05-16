@@ -1,0 +1,281 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/simulation/modelsim
+Eand_2
+Z1 w1629277985
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 0
+R0
+Z4 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/Gates.vhdl
+Z5 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/Gates.vhdl
+l0
+L20 1
+VAee=C<GIN0iBmjj@Di>F92
+!s100 BfSZ<<?W=27je9ISIog[R3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1629279481
+!i10b 1
+Z8 !s108 1629279481.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/Gates.vhdl|
+Z10 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/Gates.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Aequations
+R2
+R3
+DEx4 work 5 and_2 0 22 Aee=C<GIN0iBmjj@Di>F92
+!i122 0
+l25
+L24 4
+ViCbN_TK?PGnR]d<eCE8WL3
+!s100 m>zb_@67MMRKakmCG@Ie^3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1629278815
+R2
+R3
+!i122 1
+R0
+Z14 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/DUT.vhd
+Z15 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/DUT.vhd
+l0
+L3 1
+VIA^<PO]30i_[n;J;B[X@62
+!s100 D;nOXigk`?JXDzJiK<l:53
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/DUT.vhd|
+Z17 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/DUT.vhd|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 IA^<PO]30i_[n;J;B[X@62
+!i122 1
+l12
+L8 14
+VlJak<`h59If>k4l^0DiVZ2
+!s100 Z?EiLAbDLU7mdQYHP?8>12
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Pgates
+R2
+R3
+!i122 0
+R1
+R0
+R4
+R5
+l0
+L3 1
+VmoIJg:a5?ZXR^79VbOiT;2
+!s100 baGPR^8o`hE<^4=U8j4D02
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Escrabble
+Z18 w1629279024
+Z19 DPx4 work 5 gates 0 22 moIJg:a5?ZXR^79VbOiT;2
+R2
+R3
+!i122 2
+R0
+Z20 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/scrabble.vhdl
+Z21 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/scrabble.vhdl
+l0
+L7 1
+VE;:D<L:4VEX:BW1GV2D[h2
+!s100 zU1z5:[cCEmQ[@MG_TPjn2
+R6
+31
+Z22 !s110 1629279482
+!i10b 1
+Z23 !s108 1629279482.000000
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/scrabble.vhdl|
+Z25 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/scrabble.vhdl|
+!i113 1
+R11
+R12
+Abeh
+R19
+R2
+R3
+DEx4 work 8 scrabble 0 22 E;:D<L:4VEX:BW1GV2D[h2
+!i122 2
+l13
+L11 10
+VmdJ06fnbf54QODT1<MfBW2
+!s100 J4U3@ifQ3eYRiV:18YcaX0
+R6
+31
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R11
+R12
+Etestbench
+Z26 w1629278205
+R3
+R2
+!i122 3
+R0
+Z27 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/Testbench.vhdl
+Z28 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R22
+!i10b 1
+R23
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/Testbench.vhdl|
+!s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 3
+l69
+L9 132
+V=R7[S]IODBGPk;URXV]LA1
+!s100 G01jE2H9:o<Y[XH[HEQbn2
+R6
+31
+R22
+!i10b 1
+R23
+R29
+Z30 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Scarbble/db/Testbench.vhdl|
+!i113 1
+R11
+R12
+Exnor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L42 1
+VzVkHbF?6^Z[[@DJzi^NCB1
+!s100 ]^@^]?n[QeT5YJHDTJEjU3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 6 xnor_2 0 22 zVkHbF?6^Z[[@DJzi^NCB1
+!i122 0
+l47
+L46 4
+Vb7KFJMek;C^^J2KoLD_]l0
+!s100 mb4_UFnYcgI;PK4[oOg^[3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Exor_2
+R1
+R2
+R3
+!i122 0
+R0
+R4
+R5
+l0
+L31 1
+VdT0C@doLB8LIG<MHS_>GY2
+!s100 5hhb0hK>k8X53VYlfQ4<j2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Aequations
+R2
+R3
+DEx4 work 5 xor_2 0 22 dT0C@doLB8LIG<MHS_>GY2
+!i122 0
+l36
+L35 4
+VC]8MfzciojmR9SR]QRaJE1
+!s100 8_o?>l<l2li[W<l:g=nD@0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

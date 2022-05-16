@@ -1,0 +1,34 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity ALU is
+	port (S1,S0:in std_logic;A,B:in std_logic_vector(3 downto 0);Y:out std_logic_vector(7 downto 0));
+end entity ALU;
+
+architecture B of ALU is
+function add(A:std_logic_vector(3 downto 0);B:in std_logic_vector(3 downto 0))
+	return std_logic_vector is
+		variable S,C : std_logic:='0';
+		variable O: std_logic_vector(7 downto 0):="00000000";
+	begin
+		V:for i in 3 downto 0
+					O(3-i)<= A(3-i) xor B(3-i) xor C;
+					C<= (A(3-i) and B(3-i)) or (B(3-i) and C) or(A(3-i) and C);
+		end V;
+		O(4)<=S;
+	return O;
+end function;
+begin 
+	sys: process(A,B,S0,S1)
+	begin
+		if (S0='0') and (S1='0') then
+			Y<=(A&B);
+		elsif (S0='1') and (S1='0') then
+			Y<=add(A,B);
+		elsif (S0='0') and (S1='1') then
+			Y<="00000000";
+			w:for i in 3 downto 0
+				Y(i)<=A(i) xor B(i);
+			end w;
+		elsif (S0='1') and (S1='1') then
+			Y<=add(A,A);
+end B;

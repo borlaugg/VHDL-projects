@@ -1,0 +1,7 @@
+
+State Machine - |DUT|SerialComp:add_instance|y_present
+Name y_present.eq y_present.lt y_present.gt y_present.rst 
+y_present.rst 0 0 0 0 
+y_present.gt 0 0 1 1 
+y_present.lt 0 1 0 1 
+y_present.eq 1 0 0 1 

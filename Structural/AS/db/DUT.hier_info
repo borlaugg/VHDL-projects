@@ -1,0 +1,190 @@
+|DUT
+input_vector[0] => AdderSubtractor:add_instance.M
+input_vector[1] => AdderSubtractor:add_instance.B0
+input_vector[2] => AdderSubtractor:add_instance.B1
+input_vector[3] => AdderSubtractor:add_instance.B2
+input_vector[4] => AdderSubtractor:add_instance.B3
+input_vector[5] => AdderSubtractor:add_instance.A0
+input_vector[6] => AdderSubtractor:add_instance.A1
+input_vector[7] => AdderSubtractor:add_instance.A2
+input_vector[8] => AdderSubtractor:add_instance.A3
+output_vector[0] << AdderSubtractor:add_instance.S0
+output_vector[1] << AdderSubtractor:add_instance.S1
+output_vector[2] << AdderSubtractor:add_instance.S2
+output_vector[3] << AdderSubtractor:add_instance.S3
+output_vector[4] << AdderSubtractor:add_instance.Cout
+
+
+|DUT|AdderSubtractor:add_instance
+M => XOR_2:xor1.A
+M => XOR_2:xor2.A
+M => XOR_2:xor3.A
+M => XOR_2:xor4.A
+M => FULL_ADDER:fa1.Cin
+B0 => XOR_2:xor1.B
+B1 => XOR_2:xor2.B
+B2 => XOR_2:xor3.B
+B3 => XOR_2:xor4.B
+A0 => FULL_ADDER:fa1.Y
+A1 => FULL_ADDER:fa2.Y
+A2 => FULL_ADDER:fa3.Y
+A3 => FULL_ADDER:fa4.Y
+S0 <= FULL_ADDER:fa1.S
+S1 <= FULL_ADDER:fa2.S
+S2 <= FULL_ADDER:fa3.S
+S3 <= FULL_ADDER:fa4.S
+Cout <= FULL_ADDER:fa4.C
+
+
+|DUT|AdderSubtractor:add_instance|XOR_2:xor1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|XOR_2:xor2
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|XOR_2:xor3
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|XOR_2:xor4
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa1
+X => HALF_ADDER:ha1.A
+Y => HALF_ADDER:ha1.B
+Cin => HALF_ADDER:ha2.B
+C <= OR_2:or1.Y
+S <= HALF_ADDER:ha2.S
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa1|HALF_ADDER:ha1
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa1|HALF_ADDER:ha2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa1|OR_2:or1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa2
+X => HALF_ADDER:ha1.A
+Y => HALF_ADDER:ha1.B
+Cin => HALF_ADDER:ha2.B
+C <= OR_2:or1.Y
+S <= HALF_ADDER:ha2.S
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa2|HALF_ADDER:ha1
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa2|HALF_ADDER:ha2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa2|OR_2:or1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa3
+X => HALF_ADDER:ha1.A
+Y => HALF_ADDER:ha1.B
+Cin => HALF_ADDER:ha2.B
+C <= OR_2:or1.Y
+S <= HALF_ADDER:ha2.S
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa3|HALF_ADDER:ha1
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa3|HALF_ADDER:ha2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa3|OR_2:or1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa4
+X => HALF_ADDER:ha1.A
+Y => HALF_ADDER:ha1.B
+Cin => HALF_ADDER:ha2.B
+C <= OR_2:or1.Y
+S <= HALF_ADDER:ha2.S
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa4|HALF_ADDER:ha1
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa4|HALF_ADDER:ha2
+A => S.IN0
+A => C.IN0
+B => S.IN1
+B => C.IN1
+S <= S.DB_MAX_OUTPUT_PORT_TYPE
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|AdderSubtractor:add_instance|FULL_ADDER:fa4|OR_2:or1
+A => Y.IN0
+B => Y.IN1
+Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
+
+

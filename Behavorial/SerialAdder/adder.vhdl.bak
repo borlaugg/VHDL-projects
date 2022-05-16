@@ -1,0 +1,40 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity Serial_Adder is
+port (reset, a,b: in std_logic; clock: in std_logic; s: out std_logic);
+end entity;
+
+architecture beh of SerialAdder is
+type state is (c0,c1);
+signal pres,nxt: state :=rst;
+begin
+clk:process (clock,rst)
+	 begin
+		if (reset='1') then
+			pres=>c0;
+		else if (clock='1' and clock' event) then
+			pres=>nxt;
+		end if;
+	 end process;
+	
+transit:process (pres,a,b)
+	     begin
+				case pres is
+					when c0=>
+						if ((a and b)='0') then
+							nxt=>c0;
+							s=>(a or b);
+						else 
+							nxt=>c1;
+							s=>'0';
+					when c1=>
+						if ((a or b)='1') then
+							nxt=>c1;
+							s=>(a and b);
+						else
+							nxt=>c0;
+							s=>'1';
+				end case;
+			end process;
+end beh;

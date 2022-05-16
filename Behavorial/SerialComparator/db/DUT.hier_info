@@ -1,0 +1,31 @@
+|DUT
+input_vector[0] => SerialComp:add_instance.clock
+input_vector[1] => SerialComp:add_instance.b
+input_vector[2] => SerialComp:add_instance.a
+input_vector[3] => SerialComp:add_instance.reset
+output_vector[0] << SerialComp:add_instance.l
+output_vector[1] << SerialComp:add_instance.g
+
+
+|DUT|SerialComp:add_instance
+reset => l.OUTPUTSELECT
+reset => g.OUTPUTSELECT
+reset => g.OUTPUTSELECT
+reset => g.OUTPUTSELECT
+reset => y_next.lt.OUTPUTSELECT
+reset => y_next.gt.OUTPUTSELECT
+reset => y_next.rst_361.DATAIN
+reset => g.IN1
+reset => y_next.eq.IN1
+reset => y_present~3.DATAIN
+a => outp.IN0
+a => outp.IN0
+a => outp.IN0
+b => outp.IN1
+b => outp.IN1
+b => outp.IN1
+clock => y_present~1.DATAIN
+g <= g$latch.DB_MAX_OUTPUT_PORT_TYPE
+l <= l$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

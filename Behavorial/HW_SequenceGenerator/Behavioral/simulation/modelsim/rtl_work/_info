@@ -1,0 +1,134 @@
+m255
+K4
+z2
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/simulation/modelsim
+Edut
+Z1 w1632987346
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 1
+R0
+Z4 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/DUT.vhdl
+Z5 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/DUT.vhdl
+l0
+L3 1
+V1VQc@Pg2l`;D_02=4bfjH3
+!s100 mCN7?4@W>]of5zYcdAh4X3
+Z6 OV;C;2020.1;71
+31
+Z7 !s110 1633515133
+!i10b 1
+Z8 !s108 1633515133.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/DUT.vhdl|
+Z10 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/DUT.vhdl|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 1VQc@Pg2l`;D_02=4bfjH3
+!i122 1
+l12
+L8 12
+V_26^mK0>DPgOAPec8cN2L1
+!s100 TEBYK?7>GKDET4_<VeUBe0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eseqgen
+Z13 w1633514879
+R2
+R3
+!i122 0
+R0
+Z14 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/seqgen.vhdl
+Z15 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/seqgen.vhdl
+l0
+L4 1
+V8V3R65Z24[Tf1@4j:KTLf3
+!s100 2c^bi86M4oFdeI2cFej[Y0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/seqgen.vhdl|
+Z17 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/seqgen.vhdl|
+!i113 1
+R11
+R12
+Abehav
+R2
+R3
+DEx4 work 6 seqgen 0 22 8V3R65Z24[Tf1@4j:KTLf3
+!i122 0
+l20
+L9 50
+V5d>N3>GbIR8g5QSQ6`I2h2
+!s100 ^QeAB628;K`OI@8Uz]@@V2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Etestbench
+Z18 w1632987389
+R3
+R2
+!i122 2
+R0
+Z19 8C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/Testbench.vhdl
+Z20 FC:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/Testbench.vhdl
+l0
+L7 1
+V]iKK_Z9L:G9B:i8c]3eFH0
+!s100 bWf8kl8zb90X@P1m>V^K20
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/Testbench.vhdl|
+!s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/Testbench.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 ]iKK_Z9L:G9B:i8c]3eFH0
+!i122 2
+l69
+L9 132
+Vz>@IUd4flok=[ba7X[Uo91
+!s100 hfZ7eOK5<lfmMMm<AVl721
+R6
+31
+R7
+!i10b 1
+R8
+R21
+Z22 !s107 C:/Users/risha/OneDrive/Desktop/CS/vhdl/Behavorial/HW_SequenceGenerator/Behavioral/Testbench.vhdl|
+!i113 1
+R11
+R12
